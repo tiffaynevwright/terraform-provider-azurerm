@@ -211,7 +211,7 @@ resource "azurerm_stream_analytics_job" "test" {
   events_out_of_order_max_delay_in_seconds = 20
   events_out_of_order_policy               = "Drop"
   output_error_policy                      = "Stop"
-  streaming_units                          = 5
+  streaming_units                          = 6
 
   transformation_query = <<QUERY
     SELECT *

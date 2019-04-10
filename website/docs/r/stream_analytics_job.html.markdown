@@ -62,7 +62,7 @@ The following arguments are supported:
 
 * `output_error_policy` - (Required) Specifies the policy which should be applied to events which arrive at the output and cannot be written to the external storage due to being malformed (such as missing column values, column values of wrong type or size). Possible values are `Drop` and `Stop`. 
 
-* `streaming_units` - (Required) Specifies the number of streaming units that the streaming job uses. Supported values are between `1` and `120`.
+* `streaming_units` - (Required) Specifies the number of streaming units that the streaming job uses. Supported values are `1`, `3`, `6` and multiples of `6` up to `120`.
 
 * `transformation_query` - (Required) Specifies the query that will be run in the streaming job, [written in Stream Analytics Query Language (SAQL)](https://msdn.microsoft.com/library/azure/dn834998).
 

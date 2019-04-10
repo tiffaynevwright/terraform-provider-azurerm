@@ -91,7 +91,7 @@ func resourceArmStreamAnalyticsJob() *schema.Resource {
 			"streaming_units": {
 				Type:         schema.TypeInt,
 				Required:     true,
-				ValidateFunc: validation.IntBetween(1, 120),
+				ValidateFunc: validate.StreamAnalyticsJobStreamingUnits,
 			},
 
 			"transformation_query": {
