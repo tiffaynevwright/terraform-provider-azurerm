@@ -353,6 +353,7 @@ type ArmClient struct {
 
 	// Stream Analytics
 	streamAnalyticsJobsClient            streamanalytics.StreamingJobsClient
+	streamAnalyticsInputsClient          streamanalytics.InputsClient
 	streamAnalyticsTransformationsClient streamanalytics.TransformationsClient
 
 	// Traffic Manager
@@ -1317,6 +1318,10 @@ func (c *ArmClient) registerStreamAnalyticsClients(endpoint, subscriptionId stri
 	jobsClient := streamanalytics.NewStreamingJobsClientWithBaseURI(endpoint, subscriptionId)
 	c.configureClient(&jobsClient.Client, auth)
 	c.streamAnalyticsJobsClient = jobsClient
+
+	inputsClient := streamanalytics.NewInputsClientWithBaseURI(endpoint, subscriptionId)
+	c.configureClient(&inputsClient.Client, auth)
+	c.streamAnalyticsInputsClient = inputsClient
 
 	transformationsClient := streamanalytics.NewTransformationsClientWithBaseURI(endpoint, subscriptionId)
 	c.configureClient(&transformationsClient.Client, auth)
