@@ -251,8 +251,9 @@ resource "azurerm_stream_analytics_stream_input_iothub" "test" {
   shared_access_policy_name    = "iothubowner"
 
   serialization {
-    format   = "Csv"
-    encoding = "UTF8"
+    format          = "Csv"
+    encoding        = "UTF8"
+    field_delimiter = ","
   }
 }
 `, template, rInt)
