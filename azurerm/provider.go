@@ -378,6 +378,7 @@ func Provider() terraform.ResourceProvider {
 			"azurerm_storage_share":                                                          resourceArmStorageShare(),
 			"azurerm_storage_table":                                                          resourceArmStorageTable(),
 			"azurerm_stream_analytics_job":                                                   resourceArmStreamAnalyticsJob(),
+			"azurerm_stream_analytics_stream_input_blob":                                     resourceArmStreamAnalyticsStreamInputBlob(),
 			"azurerm_stream_analytics_stream_input_eventhub":                                 resourceArmStreamAnalyticsStreamInputEventHub(),
 			"azurerm_stream_analytics_stream_input_iothub":                                   resourceArmStreamAnalyticsStreamInputIoTHub(),
 			"azurerm_subnet_network_security_group_association":                              resourceArmSubnetNetworkSecurityGroupAssociation(),
