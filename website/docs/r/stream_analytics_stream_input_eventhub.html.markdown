@@ -97,7 +97,7 @@ A `serialization` block supports the following:
 
 * `field_delimiter` - (Optional) The delimiter that will be used to separate comma-separated value (CSV) records. Possible values are ` ` (space), `,` (comma), `   ` (tab), `|` (pipe) and `;`.
 
--> **NOTE:** This is required when `format` is set to`Csv`.
+-> **NOTE:** This is required when `format` is set to `Csv`.
 
 ## Attributes Reference
 
