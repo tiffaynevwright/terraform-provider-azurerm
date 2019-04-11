@@ -64,7 +64,6 @@ func resourceArmStreamAnalyticsStreamInputEventHub() *schema.Resource {
 			"shared_access_policy_key": {
 				Type:         schema.TypeString,
 				Required:     true,
-				ForceNew:     true,
 				Sensitive:    true,
 				ValidateFunc: validate.NoEmptyStrings,
 			},
